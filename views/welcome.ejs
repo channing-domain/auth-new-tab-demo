@@ -5,11 +5,14 @@
       <a href="/users/register" class="btn btn-primary btn-block mb-2"
         >Register</a
       >
-      <a href="/users/login" class="btn btn-secondary btn-block" target="_blank">Login</a>
+      <a href="" class="btn btn-secondary btn-block" onClick="onClickNewTab()">Login</a>
     </div>
   </div>
 </div>
 <script>
+  function onClickNewTab() {
+    window.open("/users/login", "_blank");
+  };
   setTimeout(function(){
      window.location.reload(1);
   }, 5000);
